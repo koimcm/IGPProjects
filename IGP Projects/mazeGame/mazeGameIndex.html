@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Generative Maze</title>
+    <style>
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <canvas id="canv">
+    </canvas>
+
+    <script type="module">
+
+        import "/IGP Projects/engine/Engine.js"
+        import "/IGP Projects/mazeGame/scenes/MazeScene.js"
+        import "/IGP Projects/mazeGame/scenes/WinScene.js"
+        import "/IGP Projects/mazeGame/scenes/LoseScene.js"
+        Engine.currentScene = new MazeScene()
+        Engine.setup()
+        
+    </script>
+</body>
+
+</html>
